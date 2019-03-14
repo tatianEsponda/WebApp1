@@ -1,0 +1,24 @@
+
+<div id="content">
+
+  <header id="header" class="col-lg-12"><!--[style.background]="header_color" obligo a usar el color header_color-->
+
+    <h1>
+      {{title}}
+    </h1>
+  </header>
+
+  <nav id ="nav" >
+    <ul>
+     <li> <a style="color:black;"[routerLink]="['/home']"[routerLinkActive]="['activado']">Home</a></li>
+      <li><a style="color:black;"[routerLink]="['/productos']" [routerLinkActive]="['activado']">Productos</a></li>
+      <li><a  style="color:black;"[routerLink]="['/Addproducto']" [routerLinkActive]="['activado']">Crear Producto</a></li>
+
+    </ul>
+  </nav>
+
+  <br/>
+  <footer class="col-lg-12">
+    <router-outlet></router-outlet>
+  </footer>
+</div>
